@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Legal Notice & Privacy — nostr.space</title>
+        <meta property="og:title" content="Legal Notice & Privacy — nostr.space" />
+        <meta property="og:description" content="Legal notice and privacy policy of nostr.space." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Legal Notice & Privacy — nostr.space" />
+        <meta name="twitter:description" content="Legal notice and privacy policy of nostr.space." />
+        <link rel="canonical" href="https://nostr.space/legal.html" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    </head>
+
+    <body>
+        <header class="fade-in">
+            <a href="/" class="logo-link">
+                <span class="logo-text">nostr.space</span>
+            </a>
+            <nav>
+                <a href="/#welcome">Welcome</a>
+                <a href="/#relays">Relays</a>
+                <a href="/#open-source">Open Source</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <main class="legal-page">
+            <section>
+                <h1>Legal Notice</h1>
+                <h2>Imprint</h2>
+                <p>
+                    <strong>nostr.space</strong>
+                    <br />
+                    Operated by DFX.swiss
+                    <br />
+                    Bahnhofstrasse 7
+                    <br />
+                    6300 Zug
+                    <br />
+                    Switzerland
+                </p>
+                <p>
+                    Email:
+                    <a href="mailto:info@dfx.swiss">info@dfx.swiss</a>
+                </p>
+            </section>
+
+            <section>
+                <h1>Privacy Policy</h1>
+                <h2>Overview</h2>
+                <p>
+                    nostr.space ("we", "us") operates this website and the relays at relay.nostr.space and
+                    dev-relay.nostr.space. We are committed to protecting your privacy.
+                </p>
+
+                <h3>Website</h3>
+                <p>
+                    This website is a static site. We do not use cookies, tracking scripts, or analytics tools. We do
+                    not collect, store, or process any personal data through the website itself.
+                </p>
+
+                <h3>Relays</h3>
+                <p>
+                    Our nostr relays accept, store, and forward events as defined by the
+                    <a href="https://github.com/nostr-protocol/nips" target="_blank" rel="noopener">nostr protocol</a>
+                    . Events published to a relay are public by design. Operational logs may contain technical metadata
+                    (such as IP addresses and timestamps) for the purpose of abuse prevention and short-term debugging,
+                    and are not shared with third parties.
+                </p>
+
+                <h3>Hosting</h3>
+                <p>
+                    This website is hosted on Cloudflare Pages. Cloudflare may collect technical data such as IP
+                    addresses in server logs as part of their infrastructure. For details, see
+                    <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">
+                        Cloudflare's Privacy Policy
+                    </a>
+                    .
+                </p>
+
+                <h3>Contact</h3>
+                <p>
+                    If you contact us via email, we will process the data you provide solely to respond to your inquiry.
+                    We will not share your data with third parties.
+                </p>
+
+                <h3>Your rights</h3>
+                <p>
+                    Under the Swiss Federal Act on Data Protection (FADP), you have the right to access, rectify, or
+                    delete any personal data we may hold. Contact us at
+                    <a href="mailto:info@dfx.swiss">info@dfx.swiss</a>
+                    .
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <span class="footer-name">nostr.space</span>
+                <nav class="footer-nav">
+                    <a href="/">Home</a>
+                    <a href="/legal.html">Legal & Privacy</a>
+                </nav>
+                <a href="https://github.com/NOSTRSpace" class="footer-social" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </footer>
+
+        <script>
+            document.querySelector('.nav-toggle').addEventListener('click', function () {
+                document.querySelector('header nav').classList.toggle('open');
+            });
+        </script>
+    </body>
+</html>
