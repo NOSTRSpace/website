@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>nostr.space</title>
+        <meta name="description" content="We run reliable nostr relays. Free, open, and built to last." />
+        <meta property="og:title" content="nostr.space" />
+        <meta property="og:description" content="We run reliable nostr relays. Free, open, and built to last." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nostr.space/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="nostr.space" />
+        <meta name="twitter:description" content="We run reliable nostr relays. Free, open, and built to last." />
+        <link rel="canonical" href="https://nostr.space/" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    </head>
+
+    <body>
+        <header class="fade-in">
+            <a href="/" class="logo-link">
+                <span class="logo-text">nostr.space</span>
+            </a>
+            <nav>
+                <a href="#welcome">Welcome</a>
+                <a href="#relays">Relays</a>
+                <a href="#open-source">Open Source</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <div class="hero fade-in">
+            <div class="glow"></div>
+            <div class="headline">
+                <h1 class="slide-up">
+                    Hello, nostrich.
+                    <br />
+                    Welcome to nostr.space.
+                </h1>
+                <p class="slide-up delay-300">
+                    We run nostr relays so your notes find a home — fast, reliable, and free to use.
+                </p>
+                <a href="#relays" class="button slide-up delay-600">See the Relays</a>
+            </div>
+        </div>
+
+        <main>
+            <section id="welcome">
+                <h1>Welcome</h1>
+                <h2>A small corner of the nostr universe</h2>
+                <p>
+                    Nostr is a simple, open protocol for censorship-resistant communication. It needs relays — small
+                    servers that pass notes between people — and we like running them.
+                </p>
+                <p>
+                    No accounts, no tracking, no fees. Just point your nostr client at one of our relays and you're on
+                    your way.
+                </p>
+            </section>
+
+            <section id="relays">
+                <h1>Relays</h1>
+                <h2>Production and development endpoints</h2>
+                <p>Use the production relay for your daily nostr life. The development relay is for testing only.</p>
+                <div class="relay-grid">
+                    <a href="https://relay.nostr.space/" class="relay-card" target="_blank" rel="noopener">
+                        <span class="relay-badge">Production</span>
+                        <h3>relay.nostr.space</h3>
+                        <code>wss://relay.nostr.space</code>
+                        <p>Our main public relay. Stable, monitored, and ready for everyday use.</p>
+                    </a>
+                    <a href="https://dev-relay.nostr.space/" class="relay-card" target="_blank" rel="noopener">
+                        <span class="relay-badge dev">Development</span>
+                        <h3>dev-relay.nostr.space</h3>
+                        <code>wss://dev-relay.nostr.space</code>
+                        <p>Staging environment for testing new relay versions. May restart or reset at any time.</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="open-source">
+                <h1>Open Source</h1>
+                <h2>Everything we build lives on GitHub</h2>
+                <p>
+                    Our relay configuration, deployment scripts, and tooling are open source. Issues, pull requests, and
+                    questions are welcome.
+                </p>
+                <div class="contact-links">
+                    <a href="https://github.com/NOSTRSpace" class="button" target="_blank" rel="noopener">
+                        github.com/NOSTRSpace
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <span class="footer-name">nostr.space</span>
+                <nav class="footer-nav">
+                    <a href="#welcome">Welcome</a>
+                    <a href="#relays">Relays</a>
+                    <a href="#open-source">Open Source</a>
+                    <a href="/legal.html">Legal & Privacy</a>
+                </nav>
+                <a href="https://github.com/NOSTRSpace" class="footer-social" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </footer>
+
+        <script>
+            document.querySelector('.nav-toggle').addEventListener('click', function () {
+                document.querySelector('header nav').classList.toggle('open');
+            });
+        </script>
+    </body>
+</html>
